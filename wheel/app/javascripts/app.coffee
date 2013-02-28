@@ -16,6 +16,15 @@
 #
 # Your application begins here...
 
-Wheel = {}
-
+Wheel = Ember.Application.create()
 window.Wheel = Wheel
+
+Wheel.Router.map ->
+  @route('main')
+
+Wheel.IndexRoute = Ember.Route.extend
+  redirect: ->
+    @transitionTo('main')
+
+require 'controllers/main_controller'
+require 'views/main_view'
