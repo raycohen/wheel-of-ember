@@ -1,5 +1,7 @@
-{{view view.lengthsTextArea rows="3" columns="15" valueBinding="wordLengthsInput"}}
+{{view Wheel.UsedLetterView}}
 
 {{#each len in wordLengths}}
-  <p>{{len}}</p>
+  {{view Wheel.WordView wordLengthBinding=len}}
 {{/each}}
+
+{{view view.lengthsTextArea rows="3" columns="15" valueBinding="wordLengthsInput"}}

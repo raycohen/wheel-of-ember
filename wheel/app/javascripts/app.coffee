@@ -28,3 +28,6 @@ Wheel.IndexRoute = Ember.Route.extend
 
 require 'controllers/main_controller'
 require 'views/main_view'
+require 'views/word_view'
+require 'views/used_letter_view'
+require 'views/letter_toggle_view'

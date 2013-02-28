@@ -1,1 +1,51 @@
 // Write your CSS for this route here
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.word {
+  font-size: 40px;
+  color: #000;
+}
+
+.word {
+  text-align: center;
+  height: 3em;
+  input {
+    text-align: center;
+    width: 60px;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    height: 80px;
+    border: 5px solid green;
+    text-transform: uppercase;
+  }
+}
+
+.letter-toggle {
+  display: inline-block;
+  width: 38px;
+  margin: 0px 5px;
+  cursor: pointer;
+  &:hover {
+    color: blue;
+  }
+}
+
+.used-letters {
+  margin: 40px auto;
+  font-size: 50px;
+  font-family: helvetica, sans-serif;
+  width: 800px;
+  text-align: justify;
+  font-weight: bold;
+
+  .used {
+    text-decoration: line-through;
+    color: red;
+    font-weight: normal;
+  }
+}
